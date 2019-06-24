@@ -19,5 +19,23 @@ Both saga and reducers can listen to same type of action.
 All new components must be inside AppContainer to use header, footer and the error container
 DO-NOT-MUTATE-THE-STATE keep it immutable
 
+# Best Practices
+* Before pushing to Bitbucket run `npm lint` to check there are no code errors and warnings. 
+* Do not commit to master
+* Save all dependencies to packages.json when doing an NPM install
+* Before doing an NPM install check if dependency is a dev dependency, if so install it as a dev dependency. 
+
+# Project Structure  
+
+* **semantic-theme** (*Customized version of semantic default theme*)
+    * **Site** (*Where to put theme overrides in correct sub folders*)
+* **src** (*React web application*)
+    * **api** (*Web request to REST API's*)
+    * **components** (*React stateful components*)
+    * **images** (*Image assets*)
+    * **pages** (*React stateful components that represent web pages*)
+    * **sass** (*Sass style sheets*)
+    * **statelessComponents** (*React components with no state*)
+    * **utils** (*Reusable helper classes*)
 
 
