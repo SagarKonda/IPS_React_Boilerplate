@@ -23,17 +23,17 @@
 * **utils** - helpers functions <br>
 
 # Data-flow
-dispatch an action <br>
-redux will listen to these actions <br>
-if there is a case written in reducers it will go there and return thee new state <br>
-if any saga is listening to this action it will perform API call and again dispatch action based on success or error response <br>
-one state is updated, it will flow back to th connected react components <br>
-if there is any error, a modal will show up with the details. 
+Dispatch an action. <br>
+Redux will listen to these actions. <br>
+If there is a case written in reducers it will go there and return the new state. <br>
+If any saga is listening to this action it will perform API call and again dispatch action based on success or error response. <br>
+On state is updated, it will flow back to the connected react components. <br>
+If there is any error, a modal will show up with the details. 
 
 # Notes
 Both saga and reducers can listen to same type of action.
-All new components must be inside AppContainer to use header, footer and the error container
-DO-NOT-MUTATE-THE-STATE keep it immutable
+All new components must be inside AppContainer to use header, footer and the error container.
+DO-NOT-MUTATE-THE-STATE keep it immutable.
 
 # Best Practices
 * Before pushing to Bitbucket run `npm lint` to check there are no code errors and warnings. 
