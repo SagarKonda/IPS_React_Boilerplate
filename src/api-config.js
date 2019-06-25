@@ -1,12 +1,10 @@
 import axios from "axios";
-import {
-  call
-} from "redux-saga/effects";
+import { call } from "redux-saga/effects";
 
 const axiosDefaults = {
   headers: {
     "Content-Type": "application/json"
-  },
+  }
 };
 const axiosConfig = axios.create({
   ...axiosDefaults,
@@ -15,14 +13,10 @@ const axiosConfig = axios.create({
 
 // Methods
 const GET = axiosConfig.get;
-const apiBase = 'http://localhost:3001';
+const apiBase = "http://localhost:3001";
 
 const api = {
-  getAPI: () =>
-    call(
-      GET,
-      `${apiBase}`
-    ),
+  getAPI: () => call(GET, `${apiBase}`)
 };
 
 export default api;

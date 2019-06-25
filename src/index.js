@@ -1,9 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+/* eslint-disable react/jsx-filename-extension */
+import React from "react";
+import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { store } from './index.store';
-import AppRoutes from './routes/index.jsx';
+import { store } from "./index.store";
+import AppRoutes from "./routes/index.jsx";
 
-ReactDOM.render(<Provider store={store}>
-  <AppRoutes />
-</Provider>, document.getElementById('root'));
+ReactDOM.render(
+  <Provider store={store}>
+    <AppRoutes />
+  </Provider>,
+  document.getElementById("root")
+);
