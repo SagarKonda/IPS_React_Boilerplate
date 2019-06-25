@@ -29,7 +29,7 @@ import {
         ...err.response,
         message: err.message,
       };
-      yield handleError(GET_API, error);
+      yield   handleError(GET_API, error);   
     }
   }
   
