@@ -31,9 +31,6 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -53,6 +50,7 @@
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "eslint": "^6.0.1",
     "eslint-config-airbnb": "^17.1.0",
@@ -60,6 +58,7 @@
     "eslint-loader": "^2.1.2",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.2",
     "file-loader": "^4.0.0",

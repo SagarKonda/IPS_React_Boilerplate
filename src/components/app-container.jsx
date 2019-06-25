@@ -1,6 +1,7 @@
 import React from "react";
 import ErrorContainer from "../containers/error";
 
+// eslint-disable-next-line react/prop-types
 const AppContainer = ({ children }) => (
   <>
     <ErrorContainer />

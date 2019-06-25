@@ -1,21 +1,15 @@
 import update from "immutability-helper";
-import {
-    GET_API_ERROR,
-    CLEAR_ERROR
-} from '../action-types';
+import { GET_API_ERROR, CLEAR_ERROR } from "../action-types";
 
 export const initialState = {
   meta: {
     hasError: false,
     error: {}
-  },
+  }
 };
 
 export default function reducer(state = initialState, action) {
-  const {
-    type,
-    payload
-  } = action;
+  const { type, payload } = action;
 
   switch (type) {
     case GET_API_ERROR: {
@@ -30,15 +24,15 @@ export default function reducer(state = initialState, action) {
     }
 
     case CLEAR_ERROR: {
-        return update(state, {
-          meta: {
-            hasError: {
-              $set: false
-            },
-            error: { $set: {} }
-          }
-        });
-      }
+      return update(state, {
+        meta: {
+          hasError: {
+            $set: false
+          },
+          error: { $set: {} }
+        }
+      });
+    }
 
     default:
       return state;

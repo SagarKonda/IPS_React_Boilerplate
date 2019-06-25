@@ -23,15 +23,20 @@ const mapStateToProps = ({
   error
 });
 
+// eslint-disable-next-line react/prefer-stateless-function
 export class Error extends Component {
   render() {
-    const { hasError, clearErrors, error: { message } } = this.props;
+    const {
+      hasError,
+      clearErrors,
+      error: { message }
+    } = this.props;
     return (
       <Modal show={hasError} onHide={clearErrors}>
         <Modal.Header closeButton>
           <Modal.Title>Error Occured</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{ message }</Modal.Body>
+        <Modal.Body>{message}</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={clearErrors}>
             Close
@@ -44,7 +49,8 @@ export class Error extends Component {
 
 Error.propTypes = {
   hasError: PropTypes.bool.isRequired,
-  error: PropTypes.object.isRequired
+  error: PropTypes.object.isRequired,
+  clearErrors: PropTypes.bool.isRequired
 };
 
 export default connect(

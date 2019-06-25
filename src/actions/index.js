@@ -1,9 +1,9 @@
-import { GET_API, CLEAR_ERROR } from '../action-types';
+import { GET_API, CLEAR_ERROR } from "../action-types";
 
 export const getAPI = () => ({
-    type: GET_API
+  type: GET_API
 });
 
 export const clearErrors = () => ({
-    type: CLEAR_ERROR
-})
+  type: CLEAR_ERROR
+});

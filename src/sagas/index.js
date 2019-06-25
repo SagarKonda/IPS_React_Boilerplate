@@ -11,7 +11,5 @@ export const middlewareSaga =
     : createMiddlewareSaga.default();
 
 export function* rootSaga() {
-  yield all([
-    ...transform(home)
-  ]);
+  yield all([...transform(home)]);
 }

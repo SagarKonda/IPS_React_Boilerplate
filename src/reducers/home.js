@@ -1,21 +1,15 @@
 import update from "immutability-helper";
-import {
-    GET_API,
-    GET_API_SUCCESS,
-    GET_API_ERROR
-} from '../action-types';
+import { GET_API, GET_API_SUCCESS, GET_API_ERROR } from "../action-types";
 
 export const initialState = {
   meta: {
-    isLoading: true,
-  },
+    isLoading: true
+  }
 };
 
 export default function reducer(state = initialState, action) {
-  const {
-    type,
-    payload
-  } = action;
+  // eslint-disable-next-line no-unused-vars
+  const { type, payload } = action;
 
   switch (type) {
     case GET_API:
@@ -33,7 +27,7 @@ export default function reducer(state = initialState, action) {
           isLoading: {
             $set: false
           }
-        },
+        }
       });
     }
 

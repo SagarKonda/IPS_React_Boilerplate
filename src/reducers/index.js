@@ -4,6 +4,6 @@ import home from "./home";
 import error from "./error";
 
 export const rootReducer = combineReducers({
-    home,
-    error,
+  home,
+  error
 });
