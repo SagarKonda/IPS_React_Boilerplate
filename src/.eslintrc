@@ -25,6 +25,14 @@
       "no-underscore-dangle": 0,
       "prettier/prettier": "error",
       "react/forbid-prop-types": 0
-    }
+    },
+    "overrides": [
+      {
+        "files": ["*.spec.js"],
+        "rules": {
+          "no-unused-expressions": "off"
+        }
+      }
+    ]
   }
   

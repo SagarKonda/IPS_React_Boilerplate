@@ -17,6 +17,12 @@ module.exports = {
             },
         }]
     },
+    resolve: {
+        extensions: ['', 'js', 'jsx'],
+        modules: [
+          'node_modules',
+        ],
+      },
     plugins:[
         new hwp({template:path.join(__dirname, '/public/index.html')})
     ]
