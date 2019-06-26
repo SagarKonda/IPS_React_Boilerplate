@@ -12,7 +12,11 @@
 # Commands 
 * `npm start` Creates a debug build and loads application in Chrome. 
 * `npm build` Creates a production build of client application in '/dist'
-* `npm lint` Uses eslint to check for coding errors and warnings. 
+* `npm run eslint` Uses eslint to check for coding errors and warnings. 
+**Testing**
+* `npm run test` Runs all tests.
+* `npm run test:watch` - Runs and watches test files for changes. Follow the propmt for further actions.
+* `npm run test:coverage` - Generates test coverage for the whole project repo.
 
 # Project structure
 * **actions** - action creators for redux and redux-saga <br>
