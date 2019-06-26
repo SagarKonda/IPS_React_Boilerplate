@@ -12,7 +12,7 @@
 # Commands 
 * `npm start` Creates a debug build and loads application in Chrome. 
 * `npm build` Creates a production build of client application in '/dist'
-* `npm run eslint` Uses eslint to check for coding errors and warnings. 
+* `npm run eslint` Uses eslint to check for coding errors and warnings. <br>
 **Testing**
 * `npm run test` Runs all tests.
 * `npm run test:watch` - Runs and watches test files for changes. Follow the propmt for further actions.
