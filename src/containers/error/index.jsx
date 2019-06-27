@@ -4,7 +4,7 @@ import { Button, Modal } from "react-bootstrap";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
-import { clearErrors } from "../../actions";
+import { clearErrors } from '../../actions';
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
@@ -38,7 +38,7 @@ export class Error extends Component {
         </Modal.Header>
         <Modal.Body>{message}</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={clearErrors}>
+          <Button className="ui red button" onClick={clearErrors}>
             Close
           </Button>
         </Modal.Footer>
