@@ -4,7 +4,7 @@ import { Button, Modal } from "react-bootstrap";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
-import { clearErrors } from '../../actions';
+import { clearErrors } from "../../actions";
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(

@@ -1,5 +1,0 @@
-@duration: 0s;
-@blurredTransition: 0ms filter @defaultEasing;
-@blurredStartFilter: ~"blur(0px) grayscale(0)";
-@blurredEndFilter: ~"blur(5px) grayscale(0)";
-@blurredBackgroundColor: rgba(0,0,0,.75);
