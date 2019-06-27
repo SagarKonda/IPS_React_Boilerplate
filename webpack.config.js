@@ -1,4 +1,5 @@
-var path = require("path");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
 var hwp = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -8,6 +9,11 @@ module.exports = {
     filename: "build.js",
     path: path.join(__dirname, "/dist")
   },
+  resolve: {
+    alias: {
+       '../../theme.config$': path.join(__dirname, "my-semantic-theme/theme.config")  
+    }
+ },
   module: {
     rules: [
       {
