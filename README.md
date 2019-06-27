@@ -1,8 +1,13 @@
 # Setup 
 * Recommended OS OSX
 * Install Visual Studio Code (Recommended)
-    * Install ESLint plugin 
-    * Install GitLens plugin
+    * Install ESLint plugin (must have)
+    * Install GitLens plugin (must have)
+    * Install Prettier - Code formatter (must have)
+    * Install sort lines
+    * Instal Path Intellisense
+    * Install Git History (good to have)
+    * Install Import Cost (good to have)
 * Install Git
 * Check out from Bitbucket using Git 
     * URL for check out can be fond in Bitbucket under `Clone` 
@@ -40,8 +45,10 @@ All new components must be inside AppContainer to use header, footer and the err
 DO-NOT-MUTATE-THE-STATE keep it immutable.
 
 # Best Practices
-* Before pushing to Bitbucket run `npm lint` to check there are no code errors and warnings. 
+* Before pushing to Bitbucket run `npm run eslint` to check there are no code errors and warnings. 
 * Do not commit to master
 * Save all dependencies to packages.json when doing an NPM install
 * Before doing an NPM install check if dependency is a dev dependency, if so install it as a dev dependency. 
+
+**Please go through the docs folder for detailed information about all the structural features integrated in this repository.**
 

@@ -83,7 +83,7 @@
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
   },
-  "author": "IPS",
+  "author": "skonda",
   "license": "ISC",
   "moduleNameMapper": {
     "^.*[.](css|CSS)$": "EmptyModule"
