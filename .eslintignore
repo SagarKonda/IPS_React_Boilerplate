@@ -1,2 +1,4 @@
 src/**/*.spec.js
 src/**/*.spec.jsx
+*.config.js
+**/node_modules
