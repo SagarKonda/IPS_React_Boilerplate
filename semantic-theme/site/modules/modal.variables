@@ -1,0 +1,8 @@
+@basicModalHeaderColor: @lw-white;
+@basicModalColor: @lw-white;
+@tabletWidth: 540px;
+@computerWidth: 540px;
+@largeMonitorWidth: 540px;
+@widescreenMonitorWidth: 540px;
+@headerBorder: 1px solid @lw-white;
+@actionBorder: 1px solid @lw-white;
