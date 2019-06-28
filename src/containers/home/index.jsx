@@ -4,6 +4,7 @@ import { bindActionCreators } from "redux";
 
 import { getAPI } from "../../actions";
 import AppContainer from "../../components/app-container";
+import "../../sass/main.scss";
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(

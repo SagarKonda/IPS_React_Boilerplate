@@ -1,0 +1,13 @@
+@import "variables";
+
+body {
+    background-color: $color-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-width: 300px;
+    height: unset;
+}
